@@ -13,7 +13,7 @@ class Zoomeye
 {
     public static function create()
     {
-        $config = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'src' . DIRECTORY_SEPARATOR . 'config.php';
+        $config = require dirname(__FILE__) . DIRECTORY_SEPARATOR . 'config.php';
         return new Client($config);
     }
 }
